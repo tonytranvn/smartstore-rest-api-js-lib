@@ -287,7 +287,7 @@ export default class SmartStoreRestApi {
   };
 
 
-  _createAuthorizationHeader = function (signature) {
+  _createAuthorizationHeader(signature) {
     if (!signature || signature.length <= 0)
       return '';
 
